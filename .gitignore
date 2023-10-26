@@ -166,3 +166,7 @@ cython_debug/
 filelists/*
 !/filelists/esd.list
 data/*
+
+raw/*
+dataset/*
+bert/bert-base-japanese-v3/*.bin

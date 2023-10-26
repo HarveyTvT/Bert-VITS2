@@ -1,6 +1,12 @@
 # flake8: noqa: E402
 
 import os
+
+os.environ['MASTER_ADDR'] = '127.0.0.1'
+os.environ['MASTER_PORT'] = '5280'
+os.environ['WORLD_SIZE'] = '1'
+os.environ['RANK'] = '0'
+
 import torch
 from torch.nn import functional as F
 from torch.utils.data import DataLoader
